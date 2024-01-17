@@ -9,26 +9,26 @@
     <link rel="stylesheet" href="main.css">
 </head>
 
-<body class="mainDiv">
-    <div class="contentDiv">
+<body>
+    <div class="container">
 
         <h1>Random Number Generator</h1>
         <p>Generate Random number anywhere. Stop generating anytime.</p>
         <form>
-            <div class="formDiv">
-                <div class="inputBox">
-                    <label for="min" class="descrip">Minimum</label>
-                    <input type="number" id="min" required min="0" onkeypress="return event.charCode >= 48" />
+            <div class="formContainer">
+                <div class="inputContainer">
+                    <label for="min" class="rangeDescription"> Minimum</label>
+                    <input type="number" pattern="[0-9]*" id="min" required min="0" oninput="validateInput(this)" />
 
-                    <label for="max" class="descrip">Maximum</label>
-                    <input type="number" id="max" required min="0" onkeypress="return event.charCode >= 48" />
+                    <label for="max" class="rangeDescription">Maximum</label>
+                    <input type="number" pattern="[0-9]*" id="max" required min="0" oninput="validateInput(this)" />
                 </div>
-                <input type="button" value="Generate Random Number" class="generate" onclick="generateNumber()" />
+                <input type="button" value="Generate Random Number" class="generateButton" onclick="generateNumber()" />
             </div>
         </form>
-        <div id="result">
-            <p id="randomLabel">Random Number:</p>
-            <p id="random"></p>
+        <div class="resultContainer">
+            <p>Random Number:</p>
+            <p id="resultParagraph"></p>
         </div>
 
     </div>

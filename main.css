@@ -1,32 +1,16 @@
 html {
     font-family: "BebasNeueBold", "Mont", "Fontfabric-Notdef", sans-serif;
-
 }
 
-h1 {
-    margin: auto;
-    color: rgb(255, 255, 255);
-    font-size: 2em;
-    font-weight: bold;
-    padding: 11px;
-    text-align: center;
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    min-height: 100vh;
 }
 
-
-.descrip {
-    margin: auto;
-    color: rgb(255, 255, 255);
-    font-size: 1rem;
-    font-weight: bold;
-}
-
-.mainDiv {
-    width: 100%;
-    height: 100%;
-}
-
-.mainDiv:before {
-    content: ' ';
+body::before {
+    content: "";
     position: absolute;
     left: 0;
     top: 0;
@@ -34,36 +18,21 @@ h1 {
     height: 100%;
     filter: brightness(45%);
     background: url(image.png);
-    background-size: 100%;
+    background-size: cover;
     transform: scale(1.25) translateY(-10%);
     object-fit: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
-.contentDiv {
+.container {
     position: relative;
+    overflow: hidden;
+    min-height: 100vh;
 }
 
-
-.generate {
-    width: 30%;
-    padding: 16px 0;
-    font-size: 1rem;
-    background: #e50914;
-    color: #fff;
-    font-weight: 500;
-    border-radius: 4px;
-    border: none;
-    outline: none;
-    margin: 25px 0 10px;
-    cursor: pointer;
-    transition: 0.1s ease;
-
-}
-
-.formDiv {
-    width: 50%;
+.formContainer {
+    width: 100%;
     padding: 16px 0;
     font-size: 1rem;
     color: #fff;
@@ -75,35 +44,8 @@ h1 {
     text-align: center;
 }
 
-.generate button:hover {
-    background: #c40812;
-
-}
-
-p {
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    color: rgb(255, 255, 255);
-    text-align: center;
-}
-
-input {
-    width: 20%;
-    padding: 10px;
-    border: 1px solid grey;
-    background-color: #111;
-    color: #fff;
-    outline: none;
-    background: transparent;
-}
-
-
-
-#result {
-    width: 40%;
+.resultContainer {
+    width: 100%;
     color: #fff;
     border-radius: 4px;
     border: none;
@@ -117,24 +59,76 @@ input {
     justify-content: center;
 }
 
-#randomLabel {
-    padding-left: 10%;
+h1 {
+    margin: auto;
+    color: rgb(255, 255, 255);
+    font-size: 2em;
+    font-weight: bold;
+    padding: 11px;
+    text-align: center;
 }
 
-#random {
-    padding-left: 10%;
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    color: rgb(255, 255, 255);
+    text-align: center;
 }
 
-label {
+.rangeDescription {
+    margin: auto;
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    font-weight: bold;
+}
 
-    color: #777;
-    transition: 0.3s;
+
+.generateButton {
+    width: 30%;
+    height: 10%;
+    padding: 16px 0;
+    font-size: 1em;
+    background: #e50914;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    margin: 25px 0 10px;
+    cursor: pointer;
+    transition: 0.1s ease;
+}
+
+@media (max-width:700px) {
+    .generateButton {
+        width: 50%;
+        font-size: 0.8em;
+    }
+}
+
+.generateButton:hover {
+    background: #c40812;
 }
 
 .inputBox {
     padding-left: 20%;
     text-align: center;
     display: flex;
+}
 
+input {
+    width: 20%;
+    padding: 10px;
+    border: 1px solid grey;
+    background-color: #111;
+    color: #fff;
+    outline: none;
+    background: transparent;
+}
 
+#resultParagraph {
+    padding-left: 10%;
 }
