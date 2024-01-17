@@ -1,0 +1,140 @@
+html {
+    font-family: "BebasNeueBold", "Mont", "Fontfabric-Notdef", sans-serif;
+
+}
+
+h1 {
+    margin: auto;
+    color: rgb(255, 255, 255);
+    font-size: 2em;
+    font-weight: bold;
+    padding: 11px;
+    text-align: center;
+}
+
+
+.descrip {
+    margin: auto;
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.mainDiv {
+    width: 100%;
+    height: 100%;
+}
+
+.mainDiv:before {
+    content: ' ';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    filter: brightness(45%);
+    background: url(image.png);
+    background-size: 100%;
+    transform: scale(1.25) translateY(-10%);
+    object-fit: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.contentDiv {
+    position: relative;
+}
+
+
+.generate {
+    width: 30%;
+    padding: 16px 0;
+    font-size: 1rem;
+    background: #e50914;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    margin: 25px 0 10px;
+    cursor: pointer;
+    transition: 0.1s ease;
+
+}
+
+.formDiv {
+    width: 50%;
+    padding: 16px 0;
+    font-size: 1rem;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    margin: 25px 0 10px;
+    text-align: center;
+}
+
+.generate button:hover {
+    background: #c40812;
+
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+input {
+    width: 20%;
+    padding: 10px;
+    border: 1px solid grey;
+    background-color: #111;
+    color: #fff;
+    outline: none;
+    background: transparent;
+}
+
+
+
+#result {
+    width: 40%;
+    color: #fff;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    margin: 25px 0 10px;
+    display: flex;
+    font-size: 1em;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+    justify-content: center;
+}
+
+#randomLabel {
+    padding-left: 10%;
+}
+
+#random {
+    padding-left: 10%;
+}
+
+label {
+
+    color: #777;
+    transition: 0.3s;
+}
+
+.inputBox {
+    padding-left: 20%;
+    text-align: center;
+    display: flex;
+
+
+}

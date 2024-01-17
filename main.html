@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div class="mainDiv">
+        <div class="contentDiv">
+
+            <h1>Random Number Generator</h1>
+            <p>Generate Random number anywhere. Stop generating anytime.</p>
+            <form>
+                <div class="formDiv">
+                    <div class="inputBox">
+                        <label for="min" class="descrip">Minimum</label>
+                        <input type="number" id="min" required min="0" onkeypress="return event.charCode >= 48" />
+
+                        <label for="max" class="descrip">Maximum</label>
+                        <input type="number" id="max" required min="0" onkeypress="return event.charCode >= 48" />
+                    </div>
+                    <input type="button" value="Generate Random Number" class="generate" onclick="generateNumber()" />
+                </div>
+            </form>
+            <div id="result">
+                <p id="randomLabel">Random Number:</p>
+                <p id="random"></p>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
