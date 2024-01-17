@@ -1,5 +1,4 @@
 
-const button = document.querySelector("#generate")
 let random;
 
 function generateNumber() {
@@ -13,7 +12,7 @@ function generateNumber() {
     }
 
 
-    else if (min <= max) {
+    else if (min >= max) {
         console.log(min, max);
         alert("Boundless siliness if your max is not more than your min!")
     } else {

@@ -9,30 +9,28 @@
     <link rel="stylesheet" href="main.css">
 </head>
 
-<body>
-    <div class="mainDiv">
-        <div class="contentDiv">
+<body class="mainDiv">
+    <div class="contentDiv">
 
-            <h1>Random Number Generator</h1>
-            <p>Generate Random number anywhere. Stop generating anytime.</p>
-            <form>
-                <div class="formDiv">
-                    <div class="inputBox">
-                        <label for="min" class="descrip">Minimum</label>
-                        <input type="number" id="min" required min="0" onkeypress="return event.charCode >= 48" />
+        <h1>Random Number Generator</h1>
+        <p>Generate Random number anywhere. Stop generating anytime.</p>
+        <form>
+            <div class="formDiv">
+                <div class="inputBox">
+                    <label for="min" class="descrip">Minimum</label>
+                    <input type="number" id="min" required min="0" onkeypress="return event.charCode >= 48" />
 
-                        <label for="max" class="descrip">Maximum</label>
-                        <input type="number" id="max" required min="0" onkeypress="return event.charCode >= 48" />
-                    </div>
-                    <input type="button" value="Generate Random Number" class="generate" onclick="generateNumber()" />
+                    <label for="max" class="descrip">Maximum</label>
+                    <input type="number" id="max" required min="0" onkeypress="return event.charCode >= 48" />
                 </div>
-            </form>
-            <div id="result">
-                <p id="randomLabel">Random Number:</p>
-                <p id="random"></p>
+                <input type="button" value="Generate Random Number" class="generate" onclick="generateNumber()" />
             </div>
-
+        </form>
+        <div id="result">
+            <p id="randomLabel">Random Number:</p>
+            <p id="random"></p>
         </div>
+
     </div>
 </body>
 
