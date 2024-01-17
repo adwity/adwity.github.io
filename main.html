@@ -18,10 +18,10 @@
             <div class="formContainer">
                 <div class="inputContainer">
                     <label for="min" class="rangeDescription"> Minimum</label>
-                    <input type="number" pattern="[0-9]*" id="min" required min="0" oninput="validateInput(this)" />
+                    <input type="number" id="min" required min="0" oninput="validateInput(this)" />
 
                     <label for="max" class="rangeDescription">Maximum</label>
-                    <input type="number" pattern="[0-9]*" id="max" required min="0" oninput="validateInput(this)" />
+                    <input type="number" id="max" required min="0" oninput="validateInput(this)" />
                 </div>
                 <input type="button" value="Generate Random Number" class="generateButton" onclick="generateNumber()" />
             </div>
